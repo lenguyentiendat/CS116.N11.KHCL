@@ -119,7 +119,11 @@ if st.button('RUN'):
             st.write('f1_score = ', metrics.f1_score(y_test, y_pred))
     
 
-
+dataset = pd.read_csv('Position_Salaries.csv')
+X = dataset.iloc[:, 1:-1].values
+Y = dataset.iloc[:, 1].values
+print(X)
+print(Y)
 
 
     
