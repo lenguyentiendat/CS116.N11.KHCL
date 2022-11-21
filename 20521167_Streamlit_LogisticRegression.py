@@ -27,6 +27,7 @@ st.markdown("""
 wine = load_wine()
 dataframe = pd.DataFrame(data=np.c_[wine['data'],wine['target']], columns=wine['feature_names']+['target'])
 st.write(dataframe)
+st.write("MMMMM")
 
 #Input and output 
 st.markdown("## 2.Chọn input fearture: ")
